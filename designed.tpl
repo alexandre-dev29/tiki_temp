@@ -22,46 +22,7 @@
 <link rel="stylesheet" href="themes/css/bootstrap.min.css" />
 <link rel="stylesheet" href="themes/css/style.css" />
 
-<!--================Header Menu Area =================-->
-<header class="header_area ">
-    <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container box_1620">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html" style="color: white; font-weight: bold">Tiki I18n</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav menu_nav justify-content-end">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Documentation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="feature.html">Control Panel</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html"></a>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false">Toogle Translation</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link"href="tiki-interactive_trans.php?interactive_translation_mode=on">On</a></li>
-                                <li class="nav-item"><a class="nav-link" href="tiki-interactive_trans.php?interactive_translation_mode=off">Off</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-
-                    <ul class="navbar-right">
-                        <li class="nav-item">
-                            {module  module="login_box" mode=popup show_user_name='n' show_user_avatar='y' color='#ffffff' nobox='y' decorations='n' class="button button-header bg"}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
-<!--================Header Menu Area =================-->
+{include file="navbar_i18n.tpl"}
 
 
 <main class="side-main">
@@ -215,6 +176,4 @@
     <!--================ Offer section end =================-->
 </main>
 
-<script src="themes/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="themes/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 <script src="themes/js/main.js" type="text/javascript"></script>
