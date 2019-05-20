@@ -12,7 +12,7 @@
             <nav aria-label="breadcrumb" class="banner-breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Register Us</li>
+                    <li class="breadcrumb-item active" aria-current="page">Register</li>
                 </ol>
             </nav>
         </div>
