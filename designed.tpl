@@ -39,8 +39,13 @@
                     <div class="hero-banner__content">
                         <h1 class="text-center">{tr}Welcome to the Tiki i18n{/tr}</h1>
                         <p>{tr}Tiki's multilingual features are already very good. It is possible to manage a site in 35+ languages. It is also possible to manage a multilingual site with a single Tiki install. However, there are still a lot of ideas to improve.{/tr}</p>
-                        <a class="button bg offset-3" href="#">{tr}Become a translator{/tr}</a>
+                        {if $user}
+                            {module  module="switch_lang" title="Change Lang"  flip='y' nobox='y' decorations='y' class="col-6" }
+                        {else}
+                            <a class="button bg offset-3" href="#">{tr}Become a translator{/tr}</a>
+                        {/if}
 
+                        {*{ title=TITLE, flip=>y|n,)}{MODULE}*}
                     </div>
                 </div>
             </div>
