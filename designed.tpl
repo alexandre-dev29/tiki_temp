@@ -25,7 +25,7 @@
 {include file="navbar_i18n.tpl"}
 
 
-<main class="side-main">
+<main class="side-main" {if $smarty.session.interactive_translation_mode && $smarty.session.interactive_translation_mode=='on'} style="margin-top: -5rem"{/if} >
     <!--================ Hero sm Banner start =================-->
     <section class="hero-banner mb-30px">
         <div class="container">
@@ -44,7 +44,7 @@
                         {else}
                             <a class="button bg offset-3" href="#">{tr}Become a translator{/tr}</a>
                         {/if}
-
+                    
                         {*{ title=TITLE, flip=>y|n,)}{MODULE}*}
                     </div>
                 </div>
