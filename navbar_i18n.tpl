@@ -1,5 +1,5 @@
 <!--================Header Menu Area =================-->
-<header class="header_area navbar_fixed " >
+<header class="header_area {if $smarty.session.interactive_translation_mode && $smarty.session.interactive_translation_mode=='off'} navbar_fixed{/if} " >
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container box_1620">
@@ -14,16 +14,17 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav justify-content-end">
                         <li class="nav-item active"><a class="nav-link" href="https://doc.tiki.org/i18n">Documentation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="tiki-admin.php">Control Panel</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html"></a>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false">Toogle Translation</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link"href="tiki-interactive_trans.php?interactive_translation_mode=on">On</a></li>
-                                <li class="nav-item"><a class="nav-link" href="tiki-interactive_trans.php?interactive_translation_mode=off">Off</a></li>
-                            </ul>
-                        </li>
+                        {if $user}
+                            <li class="nav-item"><a class="nav-link" href="tiki-admin.php">Control Panel</a></li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false">Toggle Translation</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link"href="tiki-interactive_trans.php?interactive_translation_mode=on">On</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="tiki-interactive_trans.php?interactive_translation_mode=off">Off</a></li>
+                                </ul>
+                            </li>
+                        {/if}
                         <li class="nav-item"><a class="nav-link" href="tiki-index.php?page=contact-us">Contact</a></li>
                     </ul>
 
