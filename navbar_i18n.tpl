@@ -1,5 +1,5 @@
 <!--================Header Menu Area =================-->
-<header class="header_area {if $smarty.session.interactive_translation_mode && $smarty.session.interactive_translation_mode=='off'} navbar_fixed{/if} " >
+<header class="header_area {if $smarty.session.interactive_translation_mode && $smarty.session.interactive_translation_mode=='off'} navbar_fixed {elseif !$smarty.session.interactive_translation_mode} navbar_fixed{/if} " >
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container box_1620">
